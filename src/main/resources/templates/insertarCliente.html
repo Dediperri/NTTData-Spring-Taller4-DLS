@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<title>NTTData Clients</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<h1>Insertar cliente</h1>
+
+	<form style="width: 100%" method="post" th:object="${insertClient}"
+		th:action="@{/home/addClient/add}">
+		<table>
+			<tr>
+				<td><label>ID: </label></td>
+				<td><input type="text" class="form-control" th:field="*{customerID}" /></td>
+			</tr>
+			<tr>
+				<td><label>Nombre: </label></td>
+				<td><input type="text" class="form-control" th:field="*{customerName}" /></td>
+			</tr>
+			<tr>
+				<td><label>Apellidos: </label></td>
+				<td><input type="text" class="form-control" th:field="*{customerSurnames}" /></td>
+			</tr>
+			<tr>
+				<td><label>Fecha Nacimiento: </label></td>
+				<td><input type="text" class="form-control" th:field="*{customerBirthDate}" /></td>
+			</tr>
+			<tr>
+				<td><label>DNI: </label></td>
+				<td><input type="text" class="form-control" th:field="*{customerDNI}" /></td>
+			</tr>
+			<tr>
+				<td><button type="submit" class="btn btn-primary btn-lg">Guardar</button></td>
+			</tr>
+		</table>
+	</form>
+
+	<form action="/home/">
+		<button type="submit" class="btn btn-primary btn-lg">Pagina
+			principal</button>
+	</form>
+	<br />
+
+
+</body>
+
+</html>

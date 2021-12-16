@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<title>NTTData Clients</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<h1>Menu</h1>
+
+	<form action="/home/addClient">
+		<button type="submit" class="btn btn-primary btn-lg">Insertar cliente</button>
+	</form>
+	<br/>
+	<form action="/home/showClients">
+		<button type="submit" class="btn btn-primary btn-lg">Mostrar clientes</button>
+	</form>
+	<br/>
+	<form action="/home/getClientsByName">
+		<button type="submit" class="btn btn-primary btn-lg">Consultar clientes por nombres</button>
+	</form>
+	<br/>
+
+</body>
+
+</html>
